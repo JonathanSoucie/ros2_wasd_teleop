@@ -15,7 +15,6 @@ The goal is to provide **predictable, safe, and reusable human-in-the-loop contr
 
 - WASD keyboard control
 - Deadman-style safety (release key → stop)
-- Forward boost using `Shift + W`
 - Independent forward and turning control
 - Emergency stop (`Space`)
 - Clean shutdown (robot stops on exit)
@@ -27,8 +26,7 @@ The goal is to provide **predictable, safe, and reusable human-in-the-loop contr
 
 | Key | Action |
 |----|-------|
-| `w` | Move forward (normal speed) |
-| `Shift + w` | Move forward (boost speed) |
+| `w` | Move forward |
 | `s` | Move backward |
 | `a` | Turn left |
 | `d` | Turn right |
@@ -92,8 +90,6 @@ ros2 run my_robot_control teleop_wasd
 This node uses terminal-based keyboard input, which has inherent limitations:
 
 True key-up events are not available
-
-Modifier keys (e.g. Shift) are detected only via character case
 
 Multiple simultaneous keys are approximated via timing
 
