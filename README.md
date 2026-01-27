@@ -83,8 +83,9 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 Terminal 2: Run teleop node
 ros2 run my_robot_control teleop_wasd
 (Replace my_robot_control and teleop_wasd if your package or executable names differ.)
+```
 
-Limitations
+## Limitations
 This node uses terminal-based keyboard input, which has inherent limitations:
 
 True key-up events are not available
@@ -97,7 +98,7 @@ For full key-state tracking (true simultaneous input), OS-level keyboard librari
 
 These limitations are documented intentionally to highlight system-level tradeoffs.
 
-Intended Use
+## Intended Use
 Mobile robotics experiments
 
 Safe teleoperation during development
@@ -106,7 +107,7 @@ Teaching ROS 2 node design
 
 Human-in-the-loop control research
 
-Author
+## Author
 Jonathan Soucie
 Computer Engineering – Robotics
 University of Ottawa
