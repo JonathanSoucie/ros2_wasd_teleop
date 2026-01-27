@@ -76,12 +76,15 @@ colcon build --symlink-install
 Source the workspace:
 
 source ~/turtlebot3_ws/install/setup.bash
+
 Running with TurtleBot3 (Gazebo)
 Terminal 1: Launch Gazebo
 export TURTLEBOT3_MODEL=waffle_pi
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
 Terminal 2: Run teleop node
 ros2 run my_robot_control teleop_wasd
+
 (Replace my_robot_control and teleop_wasd if your package or executable names differ.)
 ```
 
