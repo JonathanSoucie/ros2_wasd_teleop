@@ -67,15 +67,16 @@ Clone this package into your ROS 2 workspace:
 ```bash
 cd ~/turtlebot3_ws/src
 git clone git@github.com:JonathanSoucie/ros2_wasd_teleop.git
-Build the workspace:
 
+Build the workspace:
 cd ~/turtlebot3_ws
 colcon build --symlink-install
-Source the workspace:
 
+Source the workspace:
 source ~/turtlebot3_ws/install/setup.bash
 
 Running with TurtleBot3 (Gazebo)
+
 Terminal 1: Launch Gazebo
 export TURTLEBOT3_MODEL=waffle_pi
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
